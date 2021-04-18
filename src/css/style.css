@@ -501,18 +501,7 @@ input [type=email] {
     color: #555555;
 }
 
-.custom-btn-primary2 {
-    color: #000;
-    background-color: #f8ad47;
-    border-color: #f8ad47;
-    margin: 10px 0 0;
-}
 
-.custom-btn-primary2:hover {
-    background-color: #b86d07;
-    border-color: #b86d07;
-    color: #000;
-}
 
 #newsletter form input {
     background-color: #313131;
@@ -683,27 +672,200 @@ input [type=email] {
     margin-right: -8px;
     margin-left: -8px
 }
+
+/* ------------------------------------- Checkout Page --------------------------------------- */
+.custom-table {
+	width: 100%
+}
+h1.custom-heading{
+    font-size: 36px;
+    margin: 25px 0;
+}
+.custom-table .custom-media img {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ebebeb;
+    margin-left: 10px;
+}
+
+.custom-table .custom-media h4 {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+.custom-table .quantity {
+    width: 56px;
+    height: 34px !important;
+    padding: 0px 8px;
+    margin: auto;
+}
+
+
+.custom-table th, .custom-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    font-size: 120%;
+}
+
+.custom-table th:first-child, .custom-table td:first-child {
+    width: 50%; 
+}
+
+.custom-table th {
+    color: #c2c2c2;
+    font-weight: normal;
+}
+
+/* ------------------------------------- Payment Page ---------------------------------------- */
+
+.custom-input-details {
+    border-width: 2px;
+    border-radius: 3px;
+    height: 46px !important;
+    padding: 0px 16px;
+    font-size: 18px;
+}
+
+.custom-form-control:focus {
+    border-color: #b86d07;
+    box-shadow: #b86d07;
+}
+
+.buy {
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+
+#map {
+    padding: 0;
+}
+
+#contact-options h4 {
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+
+#contact-options .heading-with-border-bottom {
+    margin-bottom: 30px;
+}
+
+#contact-info {
+	margin-bottom: 25px;
+}
+
+#contact-info .fa-lg {
+    color: #f3af41;
+    font-size: 18px;
+    margin: 10px;
+	width: 25px;
+	text-align: center;
+}
+
+#contact-options textarea {
+	height: 128px !important;
+}
+
+#contact-options {
+	margin-bottom: 25px;
+}
+
+#form-advanced-search {
+    border: 1px solid #EBEBEB;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+    display: table;
+}
+
+#form-advanced-search .custom-panel {
+    border: none;
+	padding: 5px;
+}
+
+.custom-panel .card-header {
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 7px 10px 13px;
+}
+
+.custom-list-group>.list-group-item {
+    border: none;
+    padding: 0 10px 14px 0;
+}
+
+.custom-list-group>.list-group-item:last-child {
+    padding: 0 10px 0px 0;
+}
+
+.custom-list-group {
+	border-bottom: 1px solid #EBEBEB;
+}
+
+#form-advanced-search label {
+	cursor: pointer;
+    font-weight: bold;
+}
+
+.custom-pagination li a {
+    border: 1px solid #EBEBEB;
+    width: 32px;
+	height: 32px;
+    line-height: 32px;
+    margin-right: 3px;
+    margin-left: 3px;
+    color: #C2C2C2;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.custom-pagination li.active a {
+    background-color: #F8AD47;
+	color: #fff;
+	border-color: #F8AD47;
+}
+
+.custom-pagination li a:active, 
+.custom-pagination li a:focus, 
+.custom-pagination li a:hover {
+	color: #AB7731;
+	border-color: #AB7731;
+}
+
+.custom-pagination {
+    margin: 25px 0;
+}
+
+#search-results .custom-thumbnail {
+	margin-right: -8px;
+	margin-left: -8px;
+}
+
+#search-results h3.heading-with-border-bottom {
+    margin-top: 0;
+}
+
 /* ------------------------------------- MEDIA QUERY ----------------------------------------- */
 
-@media (max-width: 1199px) {
+@media (max-width:1199px) {
     .custom-navbar .navbar-nav li a.nav-link {
         padding: 8px;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width:991px) {
+     .custom-navbar {
+		padding: 15px 20px 30px;
+    }
+    
+    .custom-navbar .container {
+		max-width: 100%;
+    }
+    
     .navbar-header {
-        display: block;
+		display: block;
         width: 100%;
         margin-bottom: 22px;
-    }
-
-    .custom-navbar {
-        padding: 15px 20px 30px;
-    }
-
-    .custom-navbar .container {
-        max-width: 100%;
     }
 
     .navbar-header .btn-icon {
@@ -712,9 +874,9 @@ input [type=email] {
 
     .form-inline {
         width: 100%;
-        border-top: 1px solid #eee;
-        border-bottom: 1px solid #eee;
-        padding: 10px 0;
+		border-top: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+		padding: 10px 0;
     }
 
     .form-inline .dropdown {
@@ -729,89 +891,156 @@ input [type=email] {
         width: 10%;
     }
 
-    .custom-navbar a.btn-icon,
+    .custom-navbar a.btn-icon, 
     .custom-navbar button.btn-icon {
+        padding: 5px 10px 4px;
         color: #777;
         border: 1px solid #ddd;
-        border-radius: 2px;
-        padding: 5px 10px 4px;
         background-color: transparent;
+        border-radius: 2px;
         font-size: 18px;
+    }
+
+    .navbar-header .btn-icon i {
+        font-size: 19px;
+        font-weight: 700;
     }
 
     .custom-navbar .navbar-nav li a.nav-link {
         padding: 10px 15px;
     }
-
+    
     .navbar-collapse {
         border-top: 1px solid #eee;
         margin-top: 15px;
-        padding-top: 8px;
+		padding-top: 8px;
     }
 
-    .overlay {
+    #carousel-featured .carousel-indicators {
+        margin-right: 5%;
+        margin-left: 0%;
+    }
+
+    .overlay{
         display: none;
     }
 
-    .custom-thumbnail .add-to-cart-btn {
-        background-color: #fff;
+    .custom-thumbnail .add-to-cart-btn{
         color: #868686;
         font-weight: normal;
-        margin-top: 5px;
     }
 
-    .custom-thumbnail img {
-        max-height: 180px;
+    #copyright, #social-icons {
+		width: 100%;
+		text-align: center;
+    }
+    
+    #social-icons {
+		font-size: 150%;
+		margin-top: 10px;
+    }
+    
+    /*product page*/
+	.product-option {
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+		line-height: 40px;
+		font-size: 20px;
+    }
+    
+    /*search page*/
+    .custom-list-group {
+		border-bottom: 0px solid #EBEBEB;
+    }
+    
+    #search-pagination {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
     }
 
-    #copyright,
-    #social-icon {
-        width: 100%;
-        text-align: center;
+    /*contact page*/
+	#form-subscription {
+		margin-bottom: 40px;
+	}
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.custom-thumbnail img {
+		height: 200px;
+	}
+}
+@media (max-width: 767px) {
+    #footer-nav #newsletter{
+        width: auto;
+    }
+    
+    #carousel-featured,#carousel-featured .product-details {
+		height: auto;
     }
 
-    #social-icon {
-        font-size: 150%;
-        margin-top: 10px;
+    
+    #carousel-featured .product-details {
+		position: static;
+		text-align: center;
     }
-
-    #brand-logo img {
+   
+    #carousel-featured {
+		padding-bottom: 25px;
+    }
+     
+    #carousel-featured .carousel-item img {
+		height: 250px;
+    }
+    
+    #brand-logos img {
         max-height: 50px;
-        max-width: 50px;
-        margin: 5px 24px 5px 23px;
+		max-width: 50px;
+		margin: 5px 24px 5px 23px;
     }
 
     #footer-nav .footer-logo {
-        margin-bottom: 30px;
+		margin-bottom: 30px;
     }
-
+    
     #footer-nav form {
-        max-width: 100%;
-        width: 100%;
+		max-width: 100%;
+		width: 100%;
     }
-
+    
     #newsletter form .input-group {
-        width: 100%;
+		width: 100%;
     }
-
-    #footer #brand-logos .img-container img {
-        margin: 5px 15px;
-    }
+    
+    /*checkout page*/
+	.hide-on-small {
+		display: none;
+	}
 }
 
-@media (max-width: 575px) {
+@media (max-width:575px) {
     .form-inline .custom-form-control {
         width: 80%;
     }
 
     .form-inline .search-btn {
-        width: 10%;
-    }
-}
-
-@media (max-width: 991px) and (min-width:768px) {
-    .custom-thumbnail img {
-        height: 200px;
+        width: 20%;
     }
 
+     #carousel-featured .carousel-item {
+		padding: 0px 18px;
+    }
+    
+    #footer #brand-logos .img-container img {
+		margin: 5px 15px;
+    }
+
+    /*product page*/
+	#form-product-selection, .comments {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+    
 }
