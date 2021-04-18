@@ -194,6 +194,11 @@ body {
     border-radius: 2px;
 }
 
+.product-details .price {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 .sale {
     background-color: #53ccd7;
     color: wheat;
@@ -617,7 +622,8 @@ input [type=email] {
     font-weight: 700;
     display: inline-block;
 }
-.product-option.active{
+
+.product-option.active {
     color: #f8ad47;
     border-color: #f8ad47;
 }
@@ -674,17 +680,20 @@ input [type=email] {
 }
 
 /* ------------------------------------- Checkout Page --------------------------------------- */
-.custom-table {
-	width: 100%
-}
-h1.custom-heading{
+h1.custom-heading {
     font-size: 36px;
     margin: 25px 0;
 }
+
+.custom-table th:first-child,
+.custom-table td:first-child {
+    width: 50%;
+}
+
 .custom-table .custom-media img {
     width: 80px;
     height: 80px;
-    border: 1px solid #ebebeb;
+    border: 1px solid #EBEBEB;
     margin-left: 10px;
 }
 
@@ -697,24 +706,44 @@ h1.custom-heading{
     width: 56px;
     height: 34px !important;
     padding: 0px 8px;
-    margin: auto;
+    text-align: center;
+    margin: 0 auto;
 }
 
+.custom-table .custom-media {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
 
-.custom-table th, .custom-table td {
+.custom-table .total-price * {
+    color: #000;
+}
+
+.custom-table .total-price .custom-text-muted .custom-text-muted {
+    color: #A9A9A9;
+}
+
+.custom-table {
+    width: 100%
+}
+
+.custom-table th,
+.custom-table td {
     padding: 15px;
     border-bottom: 1px solid #ebebeb;
     border-top: 1px solid #ebebeb;
     font-size: 120%;
 }
 
-.custom-table th:first-child, .custom-table td:first-child {
-    width: 50%; 
-}
-
 .custom-table th {
     color: #c2c2c2;
     font-weight: normal;
+}
+
+.custom-btn-with-icon {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* ------------------------------------- Payment Page ---------------------------------------- */
@@ -751,23 +780,23 @@ h1.custom-heading{
 }
 
 #contact-info {
-	margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 #contact-info .fa-lg {
     color: #f3af41;
     font-size: 18px;
     margin: 10px;
-	width: 25px;
-	text-align: center;
+    width: 25px;
+    text-align: center;
 }
 
 #contact-options textarea {
-	height: 128px !important;
+    height: 128px !important;
 }
 
 #contact-options {
-	margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 #form-advanced-search {
@@ -779,7 +808,7 @@ h1.custom-heading{
 
 #form-advanced-search .custom-panel {
     border: none;
-	padding: 5px;
+    padding: 5px;
 }
 
 .custom-panel .card-header {
@@ -798,18 +827,18 @@ h1.custom-heading{
 }
 
 .custom-list-group {
-	border-bottom: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
 }
 
 #form-advanced-search label {
-	cursor: pointer;
+    cursor: pointer;
     font-weight: bold;
 }
 
 .custom-pagination li a {
     border: 1px solid #EBEBEB;
     width: 32px;
-	height: 32px;
+    height: 32px;
     line-height: 32px;
     margin-right: 3px;
     margin-left: 3px;
@@ -821,15 +850,15 @@ h1.custom-heading{
 
 .custom-pagination li.active a {
     background-color: #F8AD47;
-	color: #fff;
-	border-color: #F8AD47;
+    color: #fff;
+    border-color: #F8AD47;
 }
 
-.custom-pagination li a:active, 
-.custom-pagination li a:focus, 
+.custom-pagination li a:active,
+.custom-pagination li a:focus,
 .custom-pagination li a:hover {
-	color: #AB7731;
-	border-color: #AB7731;
+    color: #AB7731;
+    border-color: #AB7731;
 }
 
 .custom-pagination {
@@ -837,8 +866,8 @@ h1.custom-heading{
 }
 
 #search-results .custom-thumbnail {
-	margin-right: -8px;
-	margin-left: -8px;
+    margin-right: -8px;
+    margin-left: -8px;
 }
 
 #search-results h3.heading-with-border-bottom {
@@ -854,16 +883,16 @@ h1.custom-heading{
 }
 
 @media (max-width:991px) {
-     .custom-navbar {
-		padding: 15px 20px 30px;
+    .custom-navbar {
+        padding: 15px 20px 30px;
     }
-    
+
     .custom-navbar .container {
-		max-width: 100%;
+        max-width: 100%;
     }
-    
+
     .navbar-header {
-		display: block;
+        display: block;
         width: 100%;
         margin-bottom: 22px;
     }
@@ -874,9 +903,9 @@ h1.custom-heading{
 
     .form-inline {
         width: 100%;
-		border-top: 1px solid #eee;
-		border-bottom: 1px solid #eee;
-		padding: 10px 0;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        padding: 10px 0;
     }
 
     .form-inline .dropdown {
@@ -891,7 +920,7 @@ h1.custom-heading{
         width: 10%;
     }
 
-    .custom-navbar a.btn-icon, 
+    .custom-navbar a.btn-icon,
     .custom-navbar button.btn-icon {
         padding: 5px 10px 4px;
         color: #777;
@@ -909,11 +938,11 @@ h1.custom-heading{
     .custom-navbar .navbar-nav li a.nav-link {
         padding: 10px 15px;
     }
-    
+
     .navbar-collapse {
         border-top: 1px solid #eee;
         margin-top: 15px;
-		padding-top: 8px;
+        padding-top: 8px;
     }
 
     #carousel-featured .carousel-indicators {
@@ -921,103 +950,106 @@ h1.custom-heading{
         margin-left: 0%;
     }
 
-    .overlay{
+    .overlay {
         display: none;
     }
 
-    .custom-thumbnail .add-to-cart-btn{
+    .custom-thumbnail .add-to-cart-btn {
         color: #868686;
         font-weight: normal;
     }
 
-    #copyright, #social-icons {
-		width: 100%;
-		text-align: center;
-    }
-    
+    #copyright,
     #social-icons {
-		font-size: 150%;
-		margin-top: 10px;
+        width: 100%;
+        text-align: center;
     }
-    
+
+    #social-icons {
+        font-size: 150%;
+        margin-top: 10px;
+    }
+
     /*product page*/
-	.product-option {
-		width: 40px;
-		height: 40px;
-		margin: 10px;
-		line-height: 40px;
-		font-size: 20px;
+    .product-option {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        line-height: 40px;
+        font-size: 20px;
     }
-    
+
     /*search page*/
     .custom-list-group {
-		border-bottom: 0px solid #EBEBEB;
+        border-bottom: 0px solid #EBEBEB;
     }
-    
+
     #search-pagination {
-        display: flex; 
-        align-items: center; 
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
 
     /*contact page*/
-	#form-subscription {
-		margin-bottom: 40px;
-	}
+    #form-subscription {
+        margin-bottom: 40px;
+    }
 
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
-	.custom-thumbnail img {
-		height: 200px;
-	}
+    .custom-thumbnail img {
+        height: 200px;
+    }
 }
+
 @media (max-width: 767px) {
-    #footer-nav #newsletter{
+    #footer-nav #newsletter {
         width: auto;
     }
-    
-    #carousel-featured,#carousel-featured .product-details {
-		height: auto;
+
+    #carousel-featured,
+    #carousel-featured .product-details {
+        height: auto;
     }
 
-    
+
     #carousel-featured .product-details {
-		position: static;
-		text-align: center;
+        position: static;
+        text-align: center;
     }
-   
+
     #carousel-featured {
-		padding-bottom: 25px;
+        padding-bottom: 25px;
     }
-     
+
     #carousel-featured .carousel-item img {
-		height: 250px;
+        height: 250px;
     }
-    
+
     #brand-logos img {
         max-height: 50px;
-		max-width: 50px;
-		margin: 5px 24px 5px 23px;
+        max-width: 50px;
+        margin: 5px 24px 5px 23px;
     }
 
     #footer-nav .footer-logo {
-		margin-bottom: 30px;
+        margin-bottom: 30px;
     }
-    
+
     #footer-nav form {
-		max-width: 100%;
-		width: 100%;
+        max-width: 100%;
+        width: 100%;
     }
-    
+
     #newsletter form .input-group {
-		width: 100%;
+        width: 100%;
     }
-    
+
     /*checkout page*/
-	.hide-on-small {
-		display: none;
-	}
+    .hide-on-small {
+        display: none;
+    }
 }
 
 @media (max-width:575px) {
@@ -1029,18 +1061,19 @@ h1.custom-heading{
         width: 20%;
     }
 
-     #carousel-featured .carousel-item {
-		padding: 0px 18px;
+    #carousel-featured .carousel-item {
+        padding: 0px 18px;
     }
-    
+
     #footer #brand-logos .img-container img {
-		margin: 5px 15px;
+        margin: 5px 15px;
     }
 
     /*product page*/
-	#form-product-selection, .comments {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-    
+    #form-product-selection,
+    .comments {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 }
